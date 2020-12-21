@@ -1,8 +1,10 @@
+package pl.entity;
+
 import java.sql.*;
 
 public class DBUtil {
 
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/cinemas_ex?useSSL=false&characterEncoding=utf8";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/workshop2?useSSL=false&characterEncoding=utf8";
     private static final String DB_USER = "root";
     private static final String DB_PASS = "Donako22";
 
