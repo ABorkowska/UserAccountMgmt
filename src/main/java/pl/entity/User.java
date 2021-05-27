@@ -20,11 +20,20 @@ public class User {
         this.id = id;
     }
 
-    public User(String email, String username, String password, int id) {
+    public User(int id, String username,String email) {
+        this.id = id;
+        this.email = email;
+        this.username = username;
+    }
+
+    public User(int id, String email, String username, String password) {
         this.email = email;
         this.username = username;
         this.password = password;
         this.id = id;
+    }
+
+    public User() {
     }
 
     public int getId() {
@@ -53,11 +62,11 @@ public class User {
     }
 
     public void setEmail(String email) {
-        if (ValidateEmail(email)) {
+        //if (ValidateEmail(email)) {
             this.email = email;
-        } else {
-            throw new IllegalArgumentException("Invalid e-mail address format. E-mail could not be saved");
-        }
+        //} else {
+           // throw new IllegalArgumentException("Invalid e-mail address format. E-mail could not be saved");
+       // }
     }
 
     public void setUsername(String username) {
